@@ -85,10 +85,11 @@ follow this step:
 Install the necessary dependencies: `npm install`
 3. Setup environment variables by creating a .env file in the root directory. It should contain the following:
     ```
-    PORT=3000
+    PORT=5000
     MONGO_URL=your_mongodb_url
     ```
 4. Replace `your_mongodb_url` with your actual MongoDB connection URL.
 5. you should change connection in cors() at index.js (the detail instruction is inside file index.js)
+6. for connect with my Client side, you can clone at `https://github.com/wildan8/Tokopedia-play-Client`, you should configure the `.env` at client-side, (you can find the detail instruction at .env in `Client-side` folder)
 1. Run the server: `npm start`
 1. The server should now be running on: `http://localhost:5000`
