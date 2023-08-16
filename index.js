@@ -10,7 +10,7 @@ const io = socketIO(server);
 require("dotenv").config();
 
 app.use(cors({
-  origin: "http://localhost:3000", // Replace with your client's URL
+  origin: "tokopedia-play-server-side-qho10t9tz-wildan8.vercel.app", 
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 }));
