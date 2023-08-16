@@ -10,8 +10,8 @@ const io = socketIO(server);
 require("dotenv").config();
 
 app.use(cors({
-  origin: "https://tokopedia-play-client-eight.vercel.app", 
-  methods: "GET,POST",
+  origin: "http://localhost:3000", // Replace with your client's URL
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 }));
 app.use(express.json());
