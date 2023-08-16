@@ -11,7 +11,7 @@ require("dotenv").config();
 
 app.use(cors({
   origin: "https://tokopedia-play-client-eight.vercel.app", 
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  methods: "GET,POST",
   credentials: true,
 }));
 app.use(express.json());
