@@ -8,9 +8,10 @@ const server = http.createServer(app);
 
 // change origin with http://localhost:3000 if runs locally
 const io = socketIO(server, {
+  transports: ['polling', 'websocket'], // Add 'websocket'
   cors: {
     origin: "https://tokopedia-play-client-side.vercel.app",
-    methods: ["GET,HEAD,PUT,PATCH,POST"],
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST"],
     credentials: true,
   },
 });
