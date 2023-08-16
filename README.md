@@ -89,5 +89,6 @@ Install the necessary dependencies: `npm install`
     MONGO_URL=your_mongodb_url
     ```
 4. Replace `your_mongodb_url` with your actual MongoDB connection URL.
-5. Run the server: `npm start`
-6. The server should now be running on: `http://localhost:5000`
+5. you should change connection in cors() at index.js (the detail instruction is inside file index.js)
+1. Run the server: `npm start`
+1. The server should now be running on: `http://localhost:5000`
