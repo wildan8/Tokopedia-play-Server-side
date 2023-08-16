@@ -20,7 +20,7 @@ require("dotenv").config();
 // change origin with http://localhost:3000 if runs locally
 app.use(cors({
   origin: "https://tokopedia-play-client-side.vercel.app", 
-  methods: "GET,HEAD,PUT,PATCH,POST",
+  methods: ["GET", "HEAD", "PUT", "PATCH", "POST"],
   credentials: true,
 }));
 
