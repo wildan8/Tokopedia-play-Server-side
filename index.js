@@ -6,6 +6,7 @@ const socketIO = require("socket.io");
 const app = express();
 const server = http.createServer(app);
 
+// change origin with http://localhost:3000 if runs locally
 const io = socketIO(server, {
   cors: {
     origin: "http://localhost:3000",
@@ -16,8 +17,9 @@ const io = socketIO(server, {
 
 require("dotenv").config();
 
+// change origin with http://localhost:3000 if runs locally
 app.use(cors({
-  origin: "http://localhost:3000", // Replace with your client's URL
+  origin: "http://localhost:3000", 
   methods: "GET,HEAD,PUT,PATCH,POST",
   credentials: true,
 }));
