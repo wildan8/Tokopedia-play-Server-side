@@ -10,7 +10,7 @@ const io = socketIO(server);
 require("dotenv").config();
 
 app.use(cors({
-  origin: "tokopedia-play-server-side-qho10t9tz-wildan8.vercel.app", 
+  origin: "mytokopediaplay.vercel.app", 
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 }));
