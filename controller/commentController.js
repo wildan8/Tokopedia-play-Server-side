@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const comment = mongoose.model("Comment");
-const {io} = require('../server');
+const {io} = require('../index');
 
 exports.getComment = async (req, res) => {
   try {
