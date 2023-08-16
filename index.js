@@ -9,7 +9,7 @@ const server = http.createServer(app);
 // change origin with http://localhost:3000 if runs locally
 const io = socketIO(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://tokopedia-play-client-side.vercel.app/",
     methods: ["GET,HEAD,PUT,PATCH,POST"],
     credentials: true,
   },
@@ -19,7 +19,7 @@ require("dotenv").config();
 
 // change origin with http://localhost:3000 if runs locally
 app.use(cors({
-  origin: "http://localhost:3000", 
+  origin: "https://tokopedia-play-client-side.vercel.app/", 
   methods: "GET,HEAD,PUT,PATCH,POST",
   credentials: true,
 }));
