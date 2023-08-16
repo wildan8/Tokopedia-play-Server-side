@@ -19,7 +19,7 @@ exports.postComment = async (req, res) => {
     await newComment.save();
     io.emit("commentAdded", newComment);
     console.log("Success Post Comment data");
-    res.status(200).json(newComment);
+    res.status(201).json(newComment);
   } catch (error) {
     res
       .status(400)

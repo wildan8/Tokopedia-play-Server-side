@@ -5,15 +5,24 @@ const socketIO = require("socket.io");
 
 const app = express();
 const server = http.createServer(app);
-const io = socketIO(server);
+
+const io = socketIO(server, {
+  cors: {
+    origin: "http://localhost:3000",
+    methods: ["GET,HEAD,PUT,PATCH,POST"],
+    credentials: true,
+  },
+});
 
 require("dotenv").config();
 
 app.use(cors({
   origin: "http://localhost:3000", // Replace with your client's URL
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  methods: "GET,HEAD,PUT,PATCH,POST",
   credentials: true,
 }));
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
